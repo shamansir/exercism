@@ -1,6 +1,6 @@
-module HelloWorld exposing (helloWorld)
+module HelloWorld exposing (..)
 
-helloWorld: Maybe String -> String
+helloWorld : Maybe String -> String
 helloWorld subject =
     case subject of
 

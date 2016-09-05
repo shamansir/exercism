@@ -1,1 +1,4 @@
 elm-stuff
+runtests.bat
+runtests.sh
+elm/**/README.md
