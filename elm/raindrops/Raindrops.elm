@@ -6,7 +6,7 @@ factors : List Int
 factors = [ 3, 5, 7 ]
 
 hasFactor : Int -> Int -> Bool
-hasFactor factor num =
+hasFactor num factor =
     num % factor == 0
 
 correspondingDrop : Int -> String
@@ -23,7 +23,7 @@ correspondingDrop factor =
 
 extractDrop : Int -> Int -> String
 extractDrop num factor =
-    if (hasFactor factor num) then
+    if (hasFactor num factor) then
         correspondingDrop factor
     else
         ""
