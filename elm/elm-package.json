@@ -6,7 +6,8 @@
     "source-directories": [
         "./hello-world",
         "./bob",
-        "./leap"
+        "./leap",
+        "./raindrops"
     ],
     "exposed-modules": [],
     "dependencies": {
