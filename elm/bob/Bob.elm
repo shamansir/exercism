@@ -37,7 +37,6 @@ determine : String -> Phrase
 determine str =
     if String.isEmpty str || String.all isSpace str then
         Silence
-    -- else if (any isUpper str) then
     else if looksLikeShout str then
         Shout
     else if String.endsWith "." str then
@@ -45,7 +44,7 @@ determine str =
     else if String.endsWith "?" str then
         Question
     else
-        Statement -- NotDetermined
+        Statement
 
 response : Phrase -> String
 response phrase =
