@@ -16,10 +16,6 @@ isSpace char =
     (char == '\t') ||
     (char == '\n')
 
-howMuch : (Char -> Bool) -> String -> Int
-howMuch check str =
-    String.length (String.filter check str)
-
 isShoutingWord : String -> Bool
 isShoutingWord word =
     (String.all Char.isUpper word) &&
