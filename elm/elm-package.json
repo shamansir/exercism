@@ -8,7 +8,8 @@
         "./bob",
         "./leap",
         "./raindrops",
-        "./pangram"
+        "./pangram",
+        "./triangle"
     ],
     "exposed-modules": [],
     "dependencies": {
