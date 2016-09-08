@@ -9,7 +9,8 @@
         "./leap",
         "./raindrops",
         "./pangram",
-        "./triangle"
+        "./triangle",
+        "./anagram"
     ],
     "exposed-modules": [],
     "dependencies": {
