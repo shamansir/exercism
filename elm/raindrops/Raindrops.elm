@@ -22,18 +22,19 @@ correspondingDrop factor =
             ""
 
 extractDrop : Int -> Int -> String
-extractDrop num factor =
-    if (hasFactor num factor) then
+extractDrop value factor =
+    if (hasFactor value factor) then
         correspondingDrop factor
     else
         ""
 
 raindrops : Int -> String
-raindrops num =
+raindrops value =
     let
-        foundDrops = String.concat (List.map (extractDrop num) factors)
+        foundDrops = List.map (extractDrop value) factors
+            |> String.concat
     in
         if not (String.isEmpty foundDrops) then
             foundDrops
         else
-            toString num
+            toString value
