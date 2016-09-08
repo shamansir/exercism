@@ -1,7 +1,6 @@
 module Bob exposing (..)
 
 import String
-import Char
 
 type Phrase
     = NotDetermined
@@ -10,37 +9,13 @@ type Phrase
     | Question
     | Shout
 
-isSpace : Char -> Bool
-isSpace char =
-    (char == ' ') ||
-    (char == '\t') ||
-    (char == '\n')
-
-isShoutingWord : String -> Bool
-isShoutingWord word =
-    (String.all Char.isUpper word) &&
-    not (word == "OK") &&
-    not (word == "DMV")
-
-looksLikeShout : String -> Bool
-looksLikeShout str =
-    if String.endsWith "GO!" str then
-        True
-    else
-        let
-            wordsCount = List.length (String.words str)
-            shoutWordsCount = List.length (List.filter isShoutingWord (String.words str))
-        in
-            (toFloat shoutWordsCount) >= ((toFloat wordsCount) / 2)
-
 determine : String -> Phrase
 determine str =
-    if String.isEmpty str || String.all isSpace str then
+    if String.isEmpty (String.trim str) then
         Silence
-    else if looksLikeShout str then
+    else if (String.toUpper str) == str
+         && (String.toLower str) /= str then
         Shout
-    else if String.endsWith "." str then
-        Statement
     else if String.endsWith "?" str then
         Question
     else
