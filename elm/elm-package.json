@@ -10,7 +10,8 @@
         "./raindrops",
         "./pangram",
         "./triangle",
-        "./anagram"
+        "./anagram",
+        "./space-age"
     ],
     "exposed-modules": [],
     "dependencies": {
