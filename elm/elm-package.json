@@ -11,7 +11,8 @@
         "./pangram",
         "./triangle",
         "./anagram",
-        "./space-age"
+        "./space-age",
+        "./difference-of-squares"
     ],
     "exposed-modules": [],
     "dependencies": {
