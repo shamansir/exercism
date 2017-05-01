@@ -13,7 +13,8 @@
         "./anagram",
         "./space-age",
         "./difference-of-squares",
-        "./word-count"
+        "./word-count",
+        "./sum-of-multiplies"
     ],
     "exposed-modules": [],
     "dependencies": {
