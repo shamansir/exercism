@@ -14,7 +14,8 @@
         "./space-age",
         "./difference-of-squares",
         "./word-count",
-        "./sum-of-multiplies"
+        "./sum-of-multiplies",
+        "./scrallble-score"
     ],
     "exposed-modules": [],
     "dependencies": {
