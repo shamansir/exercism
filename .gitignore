@@ -2,3 +2,4 @@ elm-stuff
 runtests.bat
 runtests.sh
 elm/**/README.md
+elm/node_modules
